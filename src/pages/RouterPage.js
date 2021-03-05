@@ -28,7 +28,7 @@ export const RouterPage = () => {
   
   return (
     <Router>
-      <Layout style={{ height: "100vh" }}>
+      <Layout style={{ height: "auto" }}>
         <Sider hidden={ ocultarMenu }
         collapsedWidth="0" breakpoint="md"
         >
