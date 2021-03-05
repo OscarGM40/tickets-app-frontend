@@ -31,6 +31,7 @@ export const RouterPage = () => {
       <Layout style={{ height: "auto" }}>
         <Sider hidden={ ocultarMenu }
         collapsedWidth="0" breakpoint="md"
+        style = {{minHeight:'100vh'}}
         >
           <div className="logo" style={{textAlign:'center',paddingTop:5}}>
           <Text type="warning">Seleccionar</Text>
