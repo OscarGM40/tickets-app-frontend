@@ -9,7 +9,6 @@ export const TicketApp = () => {
       <UIProvider>
         <RouterPage />
       </UIProvider>
-      
     </SocketProvider>
   );
 };

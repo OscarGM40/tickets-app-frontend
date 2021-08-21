@@ -33,15 +33,12 @@ export const Ingresar = () => {
 //vamos a manejar la persistencia del agente mediante un estado
   const [usuario] = useState(getUsuarioStorage());
 
-
-
   //saltará si todo va bien,ojo con los objetos implícitos
+  // values y errorInfo(puede que también el nombre de las funciones)
   const onFinish = (values) => {
-
     const { agente,escritorio } = values;
     localStorage.setItem('agente',agente)
     localStorage.setItem('escritorio',escritorio);
-    
     history.push('/escritorio')
   };
 
@@ -59,7 +56,7 @@ export const Ingresar = () => {
     <Text>Ingrese su nombre y numero de escritorio</Text>
     <Divider />
       <Form
-        {...layout} //es un SPREAD no un REST pues esparce
+        {...layout} //es un SPREAD no un REST pues esparce el objeto layout aqui
         name="basic"
         initialValues={{
           remember: true,

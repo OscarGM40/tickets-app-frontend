@@ -8,7 +8,7 @@ export const SocketContext = createContext();
 //creamos el HOC que aprovisionará
 export const SocketProvider = ({ children }) => {
     //es aqui donde usó el custom hook,para aprovisionar a toda la app
-    //const { socket, online } = useSocket('http://localhost:8080');
+    // const { socket, online } = useSocket('http://localhost:8080');
     const { socket, online } = useSocket('https://ticket-sockets-backend.herokuapp.com/');
     
     return (
